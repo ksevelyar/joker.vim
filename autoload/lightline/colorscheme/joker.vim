@@ -1,0 +1,35 @@
+let s:base02 = [ '#1b161f', '8' ]
+let s:base01 = [ '#231e27', '10' ]
+let s:base00 = [ '#2f2536', '12' ]
+let s:base1  = [ '#5e6b85', '14' ]
+let s:base2  = [ '#919fba', '7' ]
+let s:base3  = [ '#c8d6f3', '15' ]
+
+let s:red     = [ '#c84e4e', '1' ]
+let s:orange  = [ '#ffce50', '9' ]
+let s:yellow  = [ '#bea149', '3' ]
+let s:magenta = [ '#c16fb4', '13' ]
+let s:violet  = [ '#8178a6', '5' ]
+let s:blue    = [ '#626484', '4' ]
+let s:cyan    = [ '#2aa198', '6' ]
+let s:green   = [ '#859900', '2' ]
+
+let s:p = { 'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'tabline': {} }
+
+let s:p.normal.left     = [ [ s:base3, s:blue ],    [ s:base1, s:base01 ] ]
+let s:p.normal.right    = [ [ s:base3, s:blue ],    [ s:base1, s:base01 ] ]
+let s:p.inactive.left   = [ [ s:blue,  s:base02 ],  [ s:blue,  s:base02 ] ]
+let s:p.inactive.right  = [ [ s:blue,  s:base01 ],  [ s:blue,  s:base02 ] ]
+let s:p.insert.left     = [ [ s:base3, s:green ],   [ s:base1, s:base01 ] ]
+let s:p.replace.left    = [ [ s:base3, s:red ],     [ s:base1, s:base01 ] ]
+let s:p.visual.left     = [ [ s:base3, s:violet ],  [ s:base1, s:base01 ] ]
+let s:p.normal.middle   = [ [ s:base1, s:base02 ] ]
+let s:p.inactive.middle = [ [ s:blue,  s:base02 ] ]
+let s:p.tabline.left    = [ [ s:base1, s:base01 ] ]
+let s:p.tabline.tabsel  = [ [ s:base3, s:blue ] ]
+let s:p.tabline.middle  = [ [ s:base1, s:base02 ] ]
+let s:p.tabline.right   = [ [ s:base1, s:base01 ] ]
+let s:p.normal.error    = [ [ s:base3, s:red ] ]
+let s:p.normal.warning  = [ [ s:base3, s:orange ] ]
+
+let g:lightline#colorscheme#joker#palette = lightline#colorscheme#flatten(s:p)
