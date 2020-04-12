@@ -181,7 +181,7 @@ call s:Col('FoldColumn', 'light2', 'dark2')
 
 " Popup menu.
 call s:Col('Pmenu', 'light1', 'dark1')
-call s:Col('PmenuSel', 'light2', 'blue')
+call s:Col('PmenuSel', 'cyan', 'dark2')
 call s:Col('PmenuSbar', '', 'dark1')
 call s:Col('PmenuThumb', '', 'blue')
 
