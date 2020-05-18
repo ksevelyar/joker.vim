@@ -1,5 +1,7 @@
 # Joker
 
+![screen](https://i.imgur.com/aJdfP6w.png "screen")
+
 Dark colorscheme for Vim/Neovim inspired by [vim-gotham](https://github.com/whatyouhide/vim-gotham) and [Batman: The Animated Series](https://www.youtube.com/watch?v=-XJ3HJXxDwc).
 
 ## Install
@@ -12,10 +14,6 @@ call plug#end()
 
 colorscheme joker
 ```
-
-## Screen
-
-![screen](https://i.imgur.com/aJdfP6w.png "screen")
 
 ## Deps
 
