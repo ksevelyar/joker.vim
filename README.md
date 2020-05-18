@@ -1,6 +1,6 @@
 # Joker
 
-Dark colorscheme for Vim/Neovim inspired by [vim-gotham](https://github.com/whatyouhide/vim-gotham).
+Dark colorscheme for Vim/Neovim inspired by [vim-gotham](https://github.com/whatyouhide/vim-gotham) and [Batman: The Animated Series](https://www.youtube.com/watch?v=-XJ3HJXxDwc).
 
 ## Install
 
