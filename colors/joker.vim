@@ -64,7 +64,7 @@ endfunction
 let g:joker_palette = {}
 
 " Other colors
-let g:joker_palette.dark0 = { 'gui': '#1b161f', 'cterm': 8  }
+let g:joker_palette.dark0 = { 'gui': '#1B161FF2', 'cterm': 8  }
 let g:joker_palette.dark1 = { 'gui': '#231e27', 'cterm': 8  }
 let g:joker_palette.dark2 = { 'gui': '#2f2536', 'cterm': 8  }
 
@@ -136,6 +136,15 @@ call s:Col('TabLineSel', 'light0', 'dark2')  " the selected tab
 call s:Col('TabLine', 'light2', 'dark1')     " the non-selected tabs
 call s:Col('TabLineFill', 'dark0', 'dark0') " the rest of the tab line
 
+" Tab AirLine
+" airline_tab
+" airline_tabsel
+" airline_tabtype
+" airline_tabfill
+" airline_tabhid
+" airline_tabmod
+" call s:Col('AirlineTabsel', 'dark2', 'violet')  " the selected tab
+
 " Easy-to-guess code elements.
 call s:Col('String', 'cyan')
 call s:Col('rubyStringDelimiter', 'green')
@@ -201,7 +210,7 @@ call s:Col('SpellLocal', 'yellow')
 call s:Col('SpellRare', '', 'violet')
 
 " Diffing.
-call s:Col('DiffAdd', 'light2', 'green')
+call s:Col('DiffAdd', 'light2', 'violet')
 call s:Col('DiffChange', 'light2', 'blue')
 call s:Col('DiffDelete', 'light2', 'red')
 call s:Col('DiffText', 'light2', 'cyan')
