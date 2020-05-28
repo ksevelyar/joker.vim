@@ -65,12 +65,14 @@ let g:joker_palette = {}
 
 " Other colors
 let g:joker_palette.dark0 = { 'gui': '#1B161FF2', 'cterm': 8  }
-let g:joker_palette.dark1 = { 'gui': '#231e27', 'cterm': 8  }
-let g:joker_palette.dark2 = { 'gui': '#2f2536', 'cterm': 8  }
+let g:joker_palette.back =  { 'gui': '#1B161F',   'cterm': 8  }
 
-let g:joker_palette.light0 = { 'gui': '#c8d6f3', 'cterm': 15 }
-let g:joker_palette.light1 = { 'gui': '#919fba', 'cterm': 15 }
-let g:joker_palette.light2 = { 'gui': '#5e6b85', 'cterm': 15 }
+let g:joker_palette.dark1 = { 'gui': '#231e27',   'cterm': 8  }
+let g:joker_palette.dark2 = { 'gui': '#2f2536',   'cterm': 8  }
+
+let g:joker_palette.light0 = { 'gui': '#c8d6f3',  'cterm': 15 }
+let g:joker_palette.light1 = { 'gui': '#919fba',  'cterm': 15 }
+let g:joker_palette.light2 = { 'gui': '#5e6b85',  'cterm': 15 }
 
 let g:joker_palette.blue    = { 'gui': '#597a90', 'cterm': 4  }
 let g:joker_palette.cyan    = { 'gui': '#54c6b5', 'cterm': 6  }
@@ -115,8 +117,6 @@ call s:Col('SignColumn', '', 'dark1')
 
 call s:Col('LineNr', 'light2', 'dark1')
 call s:Col('VertSplit', 'light2', 'dark1')
-call s:Col('EndOfBuffer', 'dark0')
-
 
 call s:Col('Comment', 'light2')
 
@@ -143,7 +143,7 @@ call s:Col('TabLineFill', 'dark0', 'dark0') " the rest of the tab line
 " airline_tabfill
 " airline_tabhid
 " airline_tabmod
-" call s:Col('AirlineTabsel', 'dark2', 'violet')  " the selected tab
+call s:Col('airline_tabsel', 'dark2', 'violet')  " the selected tab
 
 " Easy-to-guess code elements.
 call s:Col('String', 'cyan')
@@ -253,4 +253,5 @@ call s:Col('NeomakeWarningSign', 'yellow', 'dark1')
 call s:Col('NeomakeErrorSign', 'red', 'dark1')
 call s:Col('NeomakeWarning', 'yellow')
 call s:Col('NeomakeError', 'red')
-"
+
+call s:Col('EndOfBuffer', 'back')
