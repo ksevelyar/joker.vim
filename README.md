@@ -4,7 +4,7 @@
 
 Dark colorscheme for Vim/Neovim inspired by [vim-gotham](https://github.com/whatyouhide/vim-gotham) and [Batman: The Animated Series](https://www.youtube.com/watch?v=-XJ3HJXxDwc) 🖤
 
-Requires [true color](https://gist.github.com/XVilka/8346728#now-supporting-true-color).
+Requires [true color](https://gist.github.com/XVilka/8346728#now-supporting-true-color) for transparency.
 
 ## Install
 
