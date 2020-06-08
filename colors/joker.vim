@@ -129,6 +129,11 @@ call s:Attr('IncSearch', 'reverse')
 " The column separating vertical splits.
 call s:Col('StatusLineNC', 'light2', 'dark1')
 call s:Col('StatusLine', 'light0', 'dark1')
+
+call s:Col("StatusLineTerm", 'cyan', 'dark1')
+call s:Col("StatusLineTermNC", 'violet', 'dark1')
+
+
 call s:Col('WildMenu', 'yellow', 'dark1')
 
 " Tab line.
@@ -143,7 +148,7 @@ call s:Col('TabLineFill', 'dark0', 'dark0') " the rest of the tab line
 " airline_tabfill
 " airline_tabhid
 " airline_tabmod
-call s:Col('airline_tabsel', 'dark2', 'violet')  " the selected tab
+" call s:Col('airline_tabsel', 'dark2', 'violet')  " the selected tab
 
 " Easy-to-guess code elements.
 call s:Col('String', 'cyan')
