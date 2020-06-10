@@ -20,7 +20,7 @@ call plug#end()
 colorscheme joker
 ```
 
-## Deps
+## Plugs
 
 Intended to use with [vim-devicons](https://github.com/ryanoasis/vim-devicons) and [vim-lightline](https://github.com/itchyny/lightline.vim). An example: [init.vim](https://github.com/ksevelyar/dotfiles/blob/master/home/.config/nvim/init.vim).
 
