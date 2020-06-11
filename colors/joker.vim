@@ -8,6 +8,10 @@
 " :help cterm-colors
 " :help group-name
 
+" Plugins ---------------------------------------------------------------------
+let g:limelight_conceal_ctermfg = 'gray'
+let g:limelight_conceal_guifg = '#6B5A68'
+
 " Bootstrap ===================================================================
 
 hi clear

@@ -26,4 +26,4 @@ Intended to use with [vim-devicons](https://github.com/ryanoasis/vim-devicons) a
 
 ## Todo
 
-- [ ] Fix [limelight.vim](https://github.com/junegunn/limelight.vim) integration
+- [x] Fix [limelight.vim](https://github.com/junegunn/limelight.vim) integration
