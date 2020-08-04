@@ -28,7 +28,3 @@ colorscheme joker
 - [limelight](https://github.com/junegunn/limelight.vim)
 
 An example of [init.vim](https://github.com/ksevelyar/idempotent-desktop/blob/master/users/shared/.config/nvim/init.vim).
-
-## Todo
-
-- [x] Fix [limelight.vim](https://github.com/junegunn/limelight.vim) integration
