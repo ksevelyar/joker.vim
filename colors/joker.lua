@@ -109,6 +109,7 @@ highlight('@keyword', { fg = palette.red })
 highlight('@variable', { fg = palette.cyan })
 highlight('@type', { fg = palette.yellow })
 highlight('@string', { fg = palette.blue })
+highlight('@tag.attribute', { fg = palette.cyan })
 
 -- LSP highlights
 highlight('LspDiagnosticsDefaultError', { fg = palette.red })
