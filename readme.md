@@ -2,17 +2,67 @@
 
 Dark colorscheme Neovim inspired by Batman: The Animated Series 🖤 with TS and LSP support.
 
-Requires [true color](https://github.com/alacritty/alacritty) for transparency.
+## Install with [home-manager](https://github.com/ksevelyar/idempotent-desktop/blob/main/users/shared.nix)
 
-## Install with [lazy](https://github.com/folke/lazy.nvim)
+```nix
+  joker-vim = pkgs.vimUtils.buildVimPlugin {
+    name = "joker-vim";
+    src = pkgs.fetchFromGitHub {
+      owner = "ksevelyar";
+      repo = "joker.vim";
+      rev = "main";
+      sha256 = "sha256-YYzU9MyetxZEGVxDEraH7jK/70SCW3Gv57JfUVuQa4A=";
+    };
+  };
+```
 
-```lua
-{
-  "ksevelyar/joker.vim",
-  lazy = false,    -- to make sure it's loaded on startup
-  priority = 1000, -- to load before other plugins
-  config = function()
-    vim.cmd('colorscheme joker')
-  end,
-}
+```nix
+  programs.neovim = {
+    enable = true;
+    defaultEditor = true;
+
+    plugins = with pkgs.vimPlugins; [
+      # UI & Status Line
+      lualine-nvim
+      nvim-web-devicons
+
+      # File Explorer
+      nvim-tree-lua
+
+      # Search & Navigation
+      telescope-nvim
+      plenary-nvim
+      leap-nvim
+
+      # Git Integration
+      vim-fugitive
+      gitsigns-nvim
+
+      # LSP & Completion
+      nvim-lspconfig
+      nvim-cmp
+      cmp-nvim-lsp
+      cmp-buffer
+      cmp-path
+      cmp-cmdline
+      cmp-vsnip
+      vim-vsnip
+
+      # Syntax & Highlighting
+      nvim-treesitter.withAllGrammars
+      nvim-colorizer-lua
+
+      # Utilities
+      indent-blankline-nvim
+      direnv-vim
+      vim-openscad
+
+      # Themes
+      joker-vim
+      oxocarbon-nvim
+
+      # LLM/AI
+      codecompanion-nvim
+    ];
+  };
 ```
